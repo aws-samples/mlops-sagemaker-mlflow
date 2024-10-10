@@ -1,0 +1,7 @@
+scikit-learn
+pandas>=2.0.0
+s3fs==0.4.2
+sagemaker
+xgboost
+mlflow==2.13.2
+sagemaker-mlflow==0.1.0

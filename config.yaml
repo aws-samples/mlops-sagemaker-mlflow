@@ -1,0 +1,14 @@
+
+SchemaVersion: '1.0'
+SageMaker:
+    PythonSDK:
+        Modules:
+            RemoteFunction:
+                InstanceType: ml.m5.xlarge
+                Dependencies: ./requirements.txt
+                IncludeLocalWorkDir: true
+                CustomFileFilter:
+                    IgnoreNamePatterns: # files or directories to ignore
+                        - "*.ipynb" # all notebook files
+                        - "*.md" # all markdown files
+                        - "__pycache__"
