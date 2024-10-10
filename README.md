@@ -104,7 +104,7 @@ You use a JupyterLab space as our IDE for this workshop.
 
    ![JupyterLab selector](img/jupyterlab-app.png)
    
-2. Each application in SageMaker studio gets its own space. Spaces are used to manage the storage and resource needs of each application. If you're participating in an AWS-led workshop or used the provided CloudFormation template, the required space is already created for you, otherwise you must create a new JupyterLab space as described in the [the Developer Guide](ttps://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-jl-user-guide.html) or re-use an existing one
+2. Each application in SageMaker studio gets its own space. Spaces are used to manage the storage and resource needs of each application. If you're participating in an AWS-led workshop or used the provided CloudFormation template, the required space is already created for you, otherwise you must create a new JupyterLab space as described in the [the Developer Guide](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-jl-user-guide.html) or re-use an existing one
 
 3. Run the space by selecting the run button on the right. This process can take a few seconds.
 
@@ -132,11 +132,9 @@ As the final preparatory step, make sure to run and execute the `00-start-here.i
 1. In the file browser open the `mlops-sagemaker-mlflow` folder by double clicking it
 2. Open `00-start-here.ipynb` notebook and follow the instructions in the notebook
 
-![](img/studio-open-notebook.png)
+![](img/mlops-jupyterlab-landing.jpg)
 
 Note: we recommend you read and then execute each cell by using the `Shift + Enter`command.
-
-After executing the `00-start-here.ipynb` notebook, you can move to the first notebook [`01-idea-development`](01-idea-development.ipynb).
 
 ## How to use this workshop
 You can do this workshop in two ways:
