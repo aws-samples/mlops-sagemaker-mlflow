@@ -45,7 +45,7 @@ If you don't have a SageMaker domain or would like to use a dedicated domain for
 
 ❗ If you have more than one domain in your account, consider the limit of the active domains in a Region in an account.
 
-To create a new domain, you can follow the onboarding [instructions](https://docs.aws.amazon.com/sagemaker/latest/dg/onboard-quick-start.html) in the Developer Guide or use the provided AWS CloudFormation [template](https://github.com/aws-samples/amazon-sagemaker-from-idea-to-production/blob/master/cfn-templates/sagemaker-domain.yaml) that creates a SageMaker domain, a user profile, and adds the IAM roles required for executing the provided notebooks.
+To create a new domain, you can follow the onboarding [instructions](https://docs.aws.amazon.com/sagemaker/latest/dg/onboard-quick-start.html) in the Developer Guide or use the provided AWS CloudFormation [template](https://github.com/aws-samples/mlops-sagemaker-mlflow/blob/master/cfn-templates/sagemaker-domain.yaml) that creates a SageMaker domain, a user profile, and adds the IAM roles required for executing the provided notebooks.
 
 ❗ If you create a new domain via AWS Console, make sure you attach the following policies to the IAM execution role of the user profile:
 - `AmazonSageMakerFullAccess`
@@ -60,7 +60,7 @@ To create a new domain, you can follow the onboarding [instructions](https://doc
 - `AWSCodePipeline_FullAccess`
 - `AmazonSageMakerPipelinesIntegrations`
 
-Download the [`sagemaker-domain.yaml` CloudFormation template](https://github.com/aws-samples/amazon-sagemaker-from-idea-to-production/blob/master/cfn-templates/sagemaker-domain.yaml).
+Download the [`sagemaker-domain.yaml` CloudFormation template](https://github.com/aws-samples/mlops-sagemaker-mlflow/blob/master/cfn-templates/sagemaker-domain.yaml).
 
 This template creates a new SageMaker domain and a user profile named `studio-user-<UUID>`. It also creates the required IAM execution role for the domain. 
 
@@ -115,13 +115,13 @@ You use a JupyterLab space as our IDE for this workshop.
 ### Start the workshop
 If you're participating in an AWS-led workshop or used the provided CloudFormation template, the workshop content is cloned on the space EBS volume automatically, no action required from you. If you use your own domain and user profile or created a domain via AWS Console UI, follow the instructions in the next section **Download notebooks into your JupyterLab space** to clone the content.
 
-The public GitHub repository [Amazon SageMaker MLOps: from idea to production in six steps](https://github.com/aws-samples/amazon-sagemaker-from-idea-to-production) contains all source code.
+The public GitHub repository [MLOps with SageMaker and MLFlow](https://github.com/aws-samples/mlops-sagemaker-mlflow) contains all source code.
 
 #### Download notebooks into your JupyterLab space
 You only need to clone the notebooks into your space if you use your own domain and user profile. To do this select `Terminal` in the JupyterLab Launcher window or select **File** > **New** > **Terminal** to open up a terminal and run the `git clone`:
 
 ```sh
-git clone https://github.com/aws-samples/amazon-sagemaker-from-idea-to-production.git
+git clone https://github.com/aws-samples/mlops-sagemaker-mlflow
 ```
 
 This will clone the repository into the local JupyterLab file system.
@@ -129,7 +129,7 @@ This will clone the repository into the local JupyterLab file system.
 #### Open and execute a setup notebook
 As the final preparatory step, make sure to run and execute the `00-start-here.ipynb` notebook. To do this
 
-1. In the file browser open the `amazon-sagemaker-from-idea-to-production` folder by double clicking it
+1. In the file browser open the `mlops-sagemaker-mlflow` folder by double clicking it
 2. Open `00-start-here.ipynb` notebook and follow the instructions in the notebook
 
 ![](img/studio-open-notebook.png)
